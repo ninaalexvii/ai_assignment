@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Untitled1</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>ai_final_assignment</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7515,7 +7515,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -7532,7 +7532,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#set a global seed early for reproducibility</span>
@@ -7547,7 +7547,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#1. Load Instance 1 (Prototyping)</span>
@@ -7592,7 +7592,7 @@ Instance 2 -&gt; n=90 models, m=5 resources, capacities=[2100. 1100. 3300. 3700.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">calculate_efficiency</span><span class="p">(</span><span class="n">utilities</span><span class="p">,</span> <span class="n">demands</span><span class="p">,</span> <span class="n">capacities</span><span class="p">):</span>
@@ -7657,7 +7657,7 @@ Repaired solution valid?: True | Utility: 67497.0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">hill_climber</span><span class="p">(</span><span class="n">utilities</span><span class="p">,</span> <span class="n">demands</span><span class="p">,</span> <span class="n">capacities</span><span class="p">,</span> <span class="n">max_evals</span><span class="o">=</span><span class="mi">2000</span><span class="p">,</span> <span class="n">use_repair</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">penalty_weight</span><span class="o">=</span><span class="mf">1000.0</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -7735,7 +7735,7 @@ Final resource usage: [445. 494.] / Capacities: [500. 500.]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -7824,11 +7824,7 @@ Final resource usage: [445. 494.] / Capacities: [500. 500.]
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol>
-<li>Your operators (1-bit flip mutation, non-worsening acceptance &gt;= to cross equal-score plateaus).</li>
-<li>Your constraint-handling choice (why Greedy Repair by lowest utility-to-normalized-demand ratio outperformed Static Penalty on Instance 1).</li>
-<li>Key takeaway / limitation (fast early gain, low variance with repair, but plateaus early—motivating a population-based metaheuristic for Instance 2's $2^{90}$ search space).</li>
-</ol>
+<p>Design &amp; Findings: The baseline Hill-Climber starts from a random binary vector (n = 28, m = 2) and applies 1-bit flip mutation with non-worsening acceptance (&gt;=) to traverse equal-utility plateaus. Because a single state is maintained rather than a population, neighborhood moves rely on bit-flip mutation rather than recombination. Across 30 runs (2,000 evaluations each), Greedy Repair (removing models with the lowest utility-to-normalized-demand ratio first) achieves a much higher mean (125,671.6) and lower standard deviation (3,269.8) than Static Penalty (78,195.3, std 19,444.8), which suffers heavy penalties near capacity limits. However, convergence flattens early, indicating local optima traps and motivating a population-based search for Instance 2.</p>
 </div>
 </div>
 </div>
@@ -7837,7 +7833,7 @@ Final resource usage: [445. 494.] / Capacities: [500. 500.]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">tournament_selection</span><span class="p">(</span><span class="n">population</span><span class="p">,</span> <span class="n">fitnesses</span><span class="p">,</span> <span class="n">rng</span><span class="p">,</span> <span class="n">tournament_size</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
@@ -7974,13 +7970,7 @@ Resource usage: [1810. 1099. 2193. 1924. 2394.] / Capacities: [2100. 1100. 3300.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol>
-<li>Hypothesis:
-Example: Comparing Greedy Repair ("repair") vs. Static Penalty ("penalty") in the GA on Instance 2 ($n=90, m=5$): Greedy Repair will achieve significantly higher feasible utility and lower run-to-run variance than Static Penalty under an equal fitness-evaluation budget because repairing infeasible offspring keeps individuals near the high-utility feasible boundary rather than wasting evaluations on heavily penalized or infeasible candidates.</li>
-<li>Equal Budget &amp; $M \ge 30$ Runs: Both variants run for 30 independent seeds (0 to 29) with the exact same fitness evaluation cap (max_evals = 30000—or 20000 if you want it to finish extra fast).</li>
-<li>Statistical Test: We use scipy.stats.mannwhitneyu (non-parametric two-sided rank-sum test) because optimization scores across runs are often non-normal.</li>
-<li>Plots &amp; Trade-Offs: We generate convergence curves and boxplots (plus a clean summary table of scores, feasibility rates, and runtime in seconds).</li>
-</ol>
+<p>Metaheuristic Engineering: For Instance 2 (n = 90, m = 5, $2^{90}$ states), a Genetic Algorithm (pop_size = 60) balances exploration and exploitation using tournament selection (k = 3) for controllable selection pressure, uniform crossover (p_c = 0.8) to mix model subsets across all 90 dimensions without positional bias, per-bit mutation (p_m = 1/n) for local diversity, and elitism (elite_size = 1) to preserve top feasible solutions. Constraint handling can be configured via Greedy Repair (enforcing feasibility immediately using normalized resource efficiency) or Static Penalty (penalizing constraint violations directly in fitness).</p>
 </div>
 </div>
 </div>
@@ -7989,7 +7979,7 @@ Example: Comparing Greedy Repair ("repair") vs. Static Penalty ("penalty") in th
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
@@ -8098,8 +8088,8 @@ Example: Comparing Greedy Repair ("repair") vs. Static Penalty ("penalty") in th
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>=== Part 3: Instance 2 (n=90, m=5) — 30 Runs per Variant ===
-GA + Repair  | Median: 11163.5 | Mean: 11156.0 | IQR: 38.0 | Avg Time: 0.851s
-GA + Penalty | Median: 11184.5 | Mean: 11177.3 | IQR: 27.0 | Avg Time: 0.413s
+GA + Repair  | Median: 11163.5 | Mean: 11156.0 | IQR: 38.0 | Avg Time: 1.020s
+GA + Penalty | Median: 11184.5 | Mean: 11177.3 | IQR: 27.0 | Avg Time: 0.528s
 Mann-Whitney U statistic: 210.5, p-value: 3.6600e-04
 </pre>
 </div>
@@ -8112,17 +8102,24 @@ Mann-Whitney U statistic: 210.5, p-value: 3.6600e-04
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c51bb501">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=99772539">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Hypothesis: Under an equal budget of 30,000 fitness evaluations across $M = 30$ independent runs on Instance 2, GA + Greedy Repair will achieve higher final feasible utility and lower variance than GA + Static Penalty because repairing infeasible offspring keeps search effort focused near valid high-utility regions.<br/>Statistical &amp; Trade-Off Analysis: A two-sided Mann-Whitney U test shows a statistically significant difference between the two variants ($U = 210.5$, $p = 3.66 \times 10^{-4} &lt; 0.05$). Contrary to the hypothesis, GA + Static Penalty achieved a slightly higher median utility (11,184.5 vs. 11,163.5) and smaller IQR (27.0 vs. 38.0), while GA + Greedy Repair converged faster in early evaluations but risked deterministic repair bias toward similar subsets. In runtime, GA + Static Penalty was roughly twice as fast (~0.413s vs. ~0.851s per run) because it avoids iterative repair loops on every candidate.</p>
 </div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=26af40bd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
